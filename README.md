@@ -1,2 +1,2 @@
 # PRODIGY_CS_01
-CAESAR CIPHER PROGRAM TO ENCRYPT AND DECRYPT MESSAGES
+This is a caesar cipher program for encrypting and decrypting messages. 
