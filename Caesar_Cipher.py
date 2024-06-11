@@ -44,7 +44,8 @@ if user_input=='e':
     key=int(input("Enter the key(1 through 26): "))
     text=input("Enter the text to encrypt: ")
     ciphertext=encrypt(text,key)
-    print(ciphertext)
+    print("Encecrypted text is  " +ciphertext)
+
 
 
 elif user_input=='d':
@@ -53,4 +54,4 @@ elif user_input=='d':
     key=int(input("Enter the key(1 through 26): "))
     text=input("Enter the text to decrypt: ")
     plaintext=decrypt(text,key)
-    print(plaintext)
+    print("Decrypted text is  " +plaintext)
