@@ -31,27 +31,27 @@ def decrypt(ciphertext,key):
                 plaintext+=letters[new_index]
     return plaintext
 
-
-print("Caesar Cipher Program")
-print()
-print("Do you want to encrypt or decrypt?")
-user_input=input("e/d  ").lower()
-print()
-
-if user_input=='e':
-    print("Encryption mode enabled")
+if __name__=="__main__":
+    print("Caesar Cipher Program")
     print()
-    key=int(input("Enter the key(1 through 26): "))
-    text=input("Enter the text to encrypt: ")
-    ciphertext=encrypt(text,key)
-    print("Encecrypted text is  " +ciphertext)
-
-
-
-elif user_input=='d':
-    print("Decryption mode enabled")
+    print("Do you want to encrypt or decrypt?")
+    user_input=input("e/d  ").lower()
     print()
-    key=int(input("Enter the key(1 through 26): "))
-    text=input("Enter the text to decrypt: ")
-    plaintext=decrypt(text,key)
-    print("Decrypted text is  " +plaintext)
+    
+    if user_input=='e':
+        print("Encryption mode enabled")
+        print()
+        key=int(input("Enter the key(1 through 26): "))
+        text=input("Enter the text to encrypt: ")
+        ciphertext=encrypt(text,key)
+        print("Encecrypted text is  " +ciphertext)
+    
+    
+    
+    elif user_input=='d':
+        print("Decryption mode enabled")
+        print()
+        key=int(input("Enter the key(1 through 26): "))
+        text=input("Enter the text to decrypt: ")
+        plaintext=decrypt(text,key)
+        print("Decrypted text is  " +plaintext)
